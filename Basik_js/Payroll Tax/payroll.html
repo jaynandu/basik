@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payroll</title>
+</head>
+
+<body>
+    <style>
+        ul {
+            list-style: none;
+        }
+
+        li {
+            text-decoration: none;
+        }
+    </style>
+    <h1>Salary calculation</h1>
+    <div class="container">
+        <section>
+            <p>Tax amount = salary * tax rate level </p>
+            <ul>
+                <li>500 -- 2000$: tax rate 10%</li>
+                <li>2000 -- 5000$: tax rate 15%</li>
+                <li>5000 -- 20000$: tax rate 20%</li>
+            </ul>
+
+            <script type="text/javascript">
+                var salary = 10000;
+                var tax = 0;
+                if (salary >= 500 && salary < 2000) {
+                    tax = salary * 0.1;
+                } else if (salary >= 2000 && salary < 5000) {
+                    tax = salary * 0.15;
+                } else if (salary >= 5000 && salary < 2000) {
+                    tax = salary * 0.2;
+                } else {
+                    tax = salary * 0.3;
+                }
+                document.write('tax amount=' + tax);
+
+            </script>
+        </section>
+    </div>
+</body>
+
+</html>

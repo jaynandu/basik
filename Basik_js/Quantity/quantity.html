@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantity</title>
+</head>
+<body>
+
+<!-- The tools add and sub 1 -->
+
+    <br>
+<input type="text" style="width:30px" id="quantity" value="1" />
+<input type="button" value="+" onclick="doAdd()" />
+<input type="button" value="-" onclick="doSub()" />
+
+<script type="text/javascript">
+function doAdd() {
+	var quantityObj = document.getElementById('quantity');
+	var value = parseInt(quantityObj.value);
+	value++;
+	quantityObj.value = value;
+}
+
+function doSub() {
+	var quantityObj = document.getElementById('quantity');
+	var value = parseInt(quantityObj.value);
+	value--;
+	quantityObj.value = value;
+}
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

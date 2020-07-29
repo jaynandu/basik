@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional statement</title>
+</head>
+
+<body>
+    <br>
+    <input type="text" name="" id="score" value="" />
+    <input type="button" value="Submit" onclick="doSubmit" />
+    <br>
+
+    <script type="text/javascript">
+    
+function doSubmit() {
+	var scoreObj = document.getElementById('score');
+	var messageObj = document.getElementById('message');
+
+	var score = parseInt(scoreObj.value);
+	if (score == 5) {
+		messageObj.innerHTML = 'Excellent';
+	} else if (score == 4) {
+		messageObj.innerHTML = 'Good';
+	} else {
+		messageObj.innerHTML = 'Need to catch up';
+	}
+}
+
+    </script>
+
+
+</body>
+
+</html>

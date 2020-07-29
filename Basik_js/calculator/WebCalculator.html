@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Calculator</title>
+</head>
+
+<body>
+
+    a: <input type="text" id="a" value="" />
+    b: <input type="text" id="b" value="" />
+
+    =
+
+    <span id="result"></span>
+    <br>
+    <input type="button" value="+" onclick="doAdd()" />
+    <input type="button" value="-" onclick="doSub()" />
+    <input type="button" value="*" onclick="doMultiply()" />    
+    <input type="button" value=":" onclick="doDivide()" />
+    
+
+    <script type="text/javascript">
+        function doAdd() {
+            var aObj = document.getElementByid('a');
+            var bObj = document.getElementById('b');
+            var resultObj = document.getElementById('result');
+
+            var a = parsenInt(aObj.value); // convert string to integer
+            var b = parsenInt(bObj.value);
+
+            resultObj.innerHTML = a + b;
+        }
+
+        function doSub() {
+            var aObj = document.getElementByid('a');
+            var bObj = document.getElementById('b');
+            var resultObj = document.getElementById('result');
+
+            var a = parsenInt(aObj.value); // convert string to integer
+            var b = parsenInt(bObj.value);
+
+            resultObj.innerHTML = a - b;
+        }
+
+
+        function doMultiply() {
+            var aObj = document.getElementByid('a');
+            var bObj = document.getElementById('b');
+            var resultObj = document.getElementById('result');
+
+            var a = parsenInt(aObj.value); // convert string to integer
+            var b = parsenInt(bObj.value);
+
+            resultObj.innerHTML = a * b;
+        }
+
+
+        function doDivide() {
+            var aObj = document.getElementByid('a');
+            var bObj = document.getElementById('b');
+            var resultObj = document.getElementById('result');
+
+            var a = parsenInt(aObj.value); // convert string to integer
+            var b = parsenInt(bObj.value);
+
+            resultObj.innerHTML = a / b;
+        }
+
+
+    </script>
+
+
+
+</body>
+
+</html>
