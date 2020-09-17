@@ -1,0 +1,21 @@
+  /* Quicksand and Roboto font import */
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Quicksand&display=swap');
+
+  /* reset of browser */
+  *,
+  *::before,
+  *::after {
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    margin: 15px;
+    font-family: quicksand, roboto, sans-serif;
+  }
+
+  section {
+    padding: 1em 0 0.5em;
+  }
